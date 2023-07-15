@@ -16,7 +16,7 @@ Hooks.on('updateCombat', (combat, diff, options, userID) => {
     const { actor } = combatant;
     const updates = [];
     for (const item of actor.items) {
-        if (item.type !== 'feat') continue;
+        // if (item.type !== 'feat') continue;
         if (item.system.uses?.per !== 'turn') continue;
 
         updates.push({
