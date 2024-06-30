@@ -3,8 +3,11 @@ const moduleID = 'uses-per-turn';
 
 Hooks.once('init', () => {
     CONFIG.DND5E.limitedUsePeriods = {
-        turn: 'Turn',
-        ...CONFIG.DND5E.limitedUsePeriods
+        ...CONFIG.DND5E.limitedUsePeriods,
+        turn: {
+            label: 'Turn',
+            abbreviation: 'T',
+        }
     };
 });
 
